@@ -14,7 +14,7 @@ public class CountSecond {
 
     public int countMinutes(int seconds) throws MyException {
         int minutes = seconds / 60;
-        if (minutes > 60 || minutes < 0){
+        if (minutes > 59 || minutes < 0){
             throw new MyException("bad input");
         }
         return minutes;
