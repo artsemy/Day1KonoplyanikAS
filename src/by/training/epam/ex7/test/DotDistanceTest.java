@@ -13,8 +13,7 @@ public class DotDistanceTest {
     public void findDistanceTest() {
         MyDot d1 = new MyDot(1, 1);
         MyDot d2 = new MyDot(1, 2);
-        DotDistance dotDistance = new DotDistance();
-        double actual = dotDistance.findDistance(d1, d2);
+        double actual = DotDistance.findDistance(d1, d2);
         double expected = 1;
         assertEquals(actual, expected, 0.0001);
     }
@@ -23,8 +22,7 @@ public class DotDistanceTest {
     public void nearestToZeroTest() throws MyException {
         MyDot d1 = new MyDot(1, 1);
         MyDot d2 = new MyDot(1, 2);
-        DotDistance dotDistance = new DotDistance();
-        MyDot actual = dotDistance.nearestToZero(d1, d2);
+        MyDot actual = DotDistance.nearestToZero(d1, d2);
         MyDot expected = new MyDot(1,1);
         assertEquals(actual, expected);
     }
@@ -33,7 +31,7 @@ public class DotDistanceTest {
     public void nearestToZeroTest_Exception() throws MyException {
         MyDot d1 = new MyDot(1, 1);
         MyDot d2 = new MyDot(1, 1);
-        DotDistance dotDistance = new DotDistance();
-        dotDistance.nearestToZero(d1, d2);
+        DotDistance.nearestToZero(d1, d2);
     }
+
 }

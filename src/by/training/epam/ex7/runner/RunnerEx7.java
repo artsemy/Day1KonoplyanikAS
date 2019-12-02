@@ -11,7 +11,6 @@ import java.util.InputMismatchException;
 public class RunnerEx7 {
 
     public static void main(String[] args) {
-        DotDistance dotDistance = new DotDistance();
         MyDot d1, d2, nearest;
         int x, y;
         try {
@@ -29,7 +28,7 @@ public class RunnerEx7 {
             d2 = new MyDot(1,1);
         }
         try {
-            nearest = dotDistance.nearestToZero(d1, d2);
+            nearest = DotDistance.nearestToZero(d1, d2);
         } catch (MyException e){
             MyPrinter.print(e.getMessage());
             nearest = new MyDot(0,0);

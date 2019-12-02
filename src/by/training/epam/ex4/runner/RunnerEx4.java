@@ -11,7 +11,6 @@ public class RunnerEx4 {
     public static void main(String[] args) {
         int a, b, c, d;
         boolean bool;
-        EvenSearch evenSearch = new EvenSearch();
         try {
             MyPrinter.print("insert a, b, c, d:");
             a = MyScanner.insertInt();
@@ -22,7 +21,7 @@ public class RunnerEx4 {
             MyPrinter.print("bad insert");
             a = b = c = d = 1;
         }
-        bool = evenSearch.twoEven(a, b, c, d);
+        bool = EvenSearch.twoEven(a, b, c, d);
         MyPrinter.print(String.valueOf(bool));
     }
 

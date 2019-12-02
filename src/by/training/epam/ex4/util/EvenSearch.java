@@ -2,7 +2,7 @@ package by.training.epam.ex4.util;
 
 public class EvenSearch {
 
-    public boolean twoEven(int a, int b, int c, int d){
+    public static boolean twoEven(int a, int b, int c, int d){
         int count = 0;
         if (isEven(a)){
             count++;
@@ -19,7 +19,7 @@ public class EvenSearch {
         return count > 1;
     }
 
-    private boolean isEven(int i){
+    private static boolean isEven(int i){
         return i % 2 == 0;
     }
 

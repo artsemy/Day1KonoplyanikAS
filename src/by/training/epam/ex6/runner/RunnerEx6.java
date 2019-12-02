@@ -12,18 +12,17 @@ public class RunnerEx6 {
     public static void main(String[] args) {
         int seconds;
         int h, m, s;
-        CountSecond countSecond = new CountSecond();
         try {
             MyPrinter.print("input seconds");
             seconds = MyScanner.insertInt();
 //            if (seconds > 86399 || seconds < 0){
 //                throw new MyException("bad input");
 //            }
-            h = countSecond.countHours(seconds);
+            h = CountSecond.countHours(seconds);
             int i = seconds - h*3600;
-            m = countSecond.countMinutes(i);
+            m = CountSecond.countMinutes(i);
             i = i - m*60;
-            s = countSecond.countSeconds(i);
+            s = CountSecond.countSeconds(i);
         } catch (InputMismatchException | MyException e) {
             MyPrinter.print(e.getMessage());
             h = m = s = 0;

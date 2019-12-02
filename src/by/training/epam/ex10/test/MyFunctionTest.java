@@ -26,4 +26,12 @@ public class MyFunctionTest {
         MyFunction.printValues(a, b, h);
     }
 
+    @Test
+    public void findValueTest() {
+        double x = 2.;
+        double actual = MyFunction.findValue(x);
+        double expected = -2.19;
+        assertEquals(actual, expected, 0.01);
+    }
+
 }

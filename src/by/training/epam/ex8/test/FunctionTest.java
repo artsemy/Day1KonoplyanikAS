@@ -22,4 +22,5 @@ public class FunctionTest {
         double expected = -0.2;
         assertEquals(actual, expected, 0.0001);
     }
+
 }

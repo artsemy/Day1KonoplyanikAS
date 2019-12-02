@@ -5,13 +5,13 @@ import by.training.epam.exception.MyException;
 
 public class DotDistance {
 
-    public double findDistance(MyDot d1, MyDot d2){
+    public static double findDistance(MyDot d1, MyDot d2){
         int a = Math.abs(d1.getX()- d1.getY());
         int b = Math.abs(d1.getY()-d2.getY());
         return Math.sqrt(a*a + b*b);
     }
 
-    public MyDot nearestToZero(MyDot d1, MyDot d2) throws MyException {
+    public static MyDot nearestToZero(MyDot d1, MyDot d2) throws MyException {
         MyDot zero = new MyDot(0, 0);
         double l1 = findDistance(zero, d1);
         double l2 = findDistance(zero, d2);

@@ -9,7 +9,6 @@ import java.util.InputMismatchException;
 public class RunnerEx1 {
 
     public static void main(String[] args) {
-        LastDigit lastDigit = new LastDigit();
         int number;
         MyPrinter.print("insert number");
         try {
@@ -18,7 +17,7 @@ public class RunnerEx1 {
             MyPrinter.print(e.getMessage());
             number = 0;
         }
-        int result = lastDigit.lastOfSquare(number);
+        int result = LastDigit.lastOfSquare(number);
         MyPrinter.print(result);
     }
 

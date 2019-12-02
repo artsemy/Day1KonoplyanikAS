@@ -42,4 +42,5 @@ public class SquareAndCircleTest {
         double actual = 2;
         assertEquals(actual, expected, 0.00001);
     }
+
 }

@@ -10,7 +10,6 @@ import java.util.InputMismatchException;
 public class RunnerEx3 {
 
     public static void main(String[] args) {
-        SquareAndCircle saq = new SquareAndCircle();
         double area, d;
         MyPrinter.print("insert area");
         try {
@@ -22,11 +21,11 @@ public class RunnerEx3 {
             MyPrinter.print(e.getMessage());
             area = 1;
         }
-        d = saq.squareSide(area);
-        d = saq.inscribedCircleRadios(d);
-        double area2 = saq.inscribedSquareArea(d);
+        d = SquareAndCircle.squareSide(area);
+        d = SquareAndCircle.inscribedCircleRadios(d);
+        double area2 = SquareAndCircle.inscribedSquareArea(d);
         MyPrinter.print("area = " + area2);
-        d = saq.areaDifference(area, area2);
+        d = SquareAndCircle.areaDifference(area, area2);
         MyPrinter.print("difference : " + d);
     }
 

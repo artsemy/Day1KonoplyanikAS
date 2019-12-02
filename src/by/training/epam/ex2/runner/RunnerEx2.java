@@ -20,7 +20,8 @@ public class RunnerEx2 {
             MyPrinter.print(e.getMessage());
             year = 2000;
             month = 1;
-        } try {
+        }
+        try {
             days = DayCounter.countDay(year, month);
         }
         catch (MyException e){

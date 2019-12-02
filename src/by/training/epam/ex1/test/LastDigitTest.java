@@ -8,9 +8,8 @@ public class LastDigitTest {
 
     @org.junit.Test
     public void lastOfSquareTest() {
-        LastDigit lastDigit = new LastDigit();
         int n = 9;
-        int actual = lastDigit.lastOfSquare(n);
+        int actual = LastDigit.lastOfSquare(n);
         int expected = 1;
         assertEquals(actual, expected);
     }

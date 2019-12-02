@@ -11,7 +11,6 @@ public class RunnerEx5 {
     public static void main(String[] args) {
         int number;
         boolean b;
-        PerfectNumberSearch search = new PerfectNumberSearch();
         try {
             MyPrinter.print("insert number");
             number = MyScanner.insertInt();
@@ -19,7 +18,7 @@ public class RunnerEx5 {
             MyPrinter.print("bad input");
             number = 1;
         }
-        b = search.isPerfect(number);
+        b = PerfectNumberSearch.isPerfect(number);
         MyPrinter.print(String.valueOf(b));
     }
 
